@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+pandas
+pandas-ta
+scikit-learn
+sqlalchemy
+psycopg2-binary
+yfinance
+requests

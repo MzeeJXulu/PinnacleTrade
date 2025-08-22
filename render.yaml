@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: forex-ai-mvp
+    env: docker
+    plan: free
+    autoDeploy: true
+
+databases:
+  - name: forex-ai-db
+    plan: free
