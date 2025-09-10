@@ -1,7 +1,16 @@
 fastapi==0.110.0
 uvicorn==0.29.0
-pandas==2.2.2
+
+# Numpy/Pandas versions with manylinux wheels for Py3.11
 numpy==1.26.4
-pandas-ta==0.3.14b
-yfinance==0.2.40
-requests==2.32.3
+pandas==2.2.2
+
+# Technical indicators (correct tag includes the trailing zero)
+pandas-ta==0.3.14b0
+
+# Data & HTTP
+yfinance==0.2.65
+requests==2.32.5
+
+# Keep pkg_resources available for pandas-ta (it imports it)
+setuptools<81
