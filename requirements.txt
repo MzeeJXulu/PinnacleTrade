@@ -1,14 +1,15 @@
 fastapi==0.110.0
 uvicorn==0.29.0
 
+# Pin NumPy/Pandas for Py3.11 (have manylinux wheels)
 numpy==1.26.4
 pandas==2.2.2
 
-# Install pandas-ta from a static archive (no git)
-pandas-ta @ https://github.com/twopirllc/pandas-ta/archive/refs/tags/0.3.14b0.zip
+# Use the current PyPI release of pandas-ta (works on Py3.11)
+pandas-ta==0.4.67b0
 
 yfinance==0.2.65
 requests==2.32.5
 
-# Keep pkg_resources available (pandas-ta imports it)
+# (Optional) keep until we confirm not needed by your code
 setuptools<81
