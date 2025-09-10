@@ -1,15 +1,11 @@
 fastapi==0.110.0
 uvicorn==0.29.0
 
-# Stable pins that have manylinux wheels on Render
 numpy==1.26.4
 pandas==2.2.2
 
-# Use 'ta' instead of pandas-ta (compatible with pandas 2.2 and Py3.11/3.12)
 ta==0.11.0
 
 yfinance==0.2.65
 requests==2.32.5
-
-# harmless; keeps pkg_resources around if any package expects it
 setuptools<81
